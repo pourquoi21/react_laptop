@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Note from "./components/Note";
+import MemeApp from "./components/MemeApp";
+import Recipe from "./components/Recipe";
+import RecipeItself from "./components/RecipeItself";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Laptop from "./components/Laptop";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Laptop />} />
+        <Route path="/recipes" element={<Recipe />} />
+        <Route path="/recipes/:id" element={<RecipeItself />} />
+        <Route path="/note" element={<Note />} />
+        <Route path="/meme" element={<MemeApp />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

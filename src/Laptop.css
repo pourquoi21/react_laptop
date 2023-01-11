@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.laptop_room {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 28vh 0;
+  background-size: cover;
+  background-image: url(image/laptop_room.jpg);
+  overflow: hidden;
+  transition: 0.5s;
+}
+.laptop_notice {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 20px;
+
+  z-index: 2;
+  color: #fff;
+}
+
+.laptop_desk {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-image: url(image/laptop_desk.jpg);
+  transition: 0.5s;
+}
+
+.laptop_back {
+  position: relative;
+  bottom: 10%;
+  left: 25%;
+  transform-origin: bottom center;
+  transition: 0.5s;
+  width: 50vw;
+  height: 55vh;
+  z-index: 2;
+  background: #dfdfdf;
+  background-image: url(image/laptop_apple.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5vw;
+  border-radius: 0.5vw;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+    inset -5px -5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.laptop_back.close {
+  left: 25%;
+  bottom: 46%;
+  /* transform: translateX(-25%); */
+  /* transform: translateX(200%); */
+  transform-origin: 0% 0% 0%;
+  transform-style: preserve-3d;
+  transform: perspective(2500px) rotateX(-100deg);
+  transition: transform 0.5s;
+  box-shadow: 0.5em 0 2em rgba(0, 0, 0, 0.2);
+}
+
+.laptop_front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 55vh;
+  border-radius: 0.5vw;
+  background: #3c3c3c;
+  backface-visibility: hidden;
+}
+
+.laptop_display {
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  width: 46vw;
+  height: 48vh;
+  box-shadow: inset 0.1em 0 0.2em rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.laptop_keyboard {
+  position: absolute;
+  top: 74%;
+  left: 22.5%;
+  width: 55vw;
+  height: 20vh;
+  border-radius: 0.2vw;
+  z-index: 1;
+  transform: perspective(650px) rotateX(-128deg);
+  background: gray;
+}
+
+.laptop_keyboard:before {
+  content: "";
+  position: absolute;
+}
+
+.laptop_keyboard:after {
+  content: "";
+  position: absolute;
+  top: -58px;
+  left: 1%;
+  width: 98%;
+  height: 100px;
+  bottom: 50px;
+  background: lightgray;
+  transform: perspective(3000px) rotateX(-100deg);
+}
+
+.laptop_keyboard img {
+  position: absolute;
+  width: 55vw;
+  height: 20vh;
+  transform: rotateX(180deg);
+}
+
+.laptop_typing {
+  width: 100vw;
+
+  text-align: center;
+  color: #fff;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+
+.laptop_typing_title {
+  width: 100%;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-size: 7em;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid orangered;
+  animation: typing 3.5s steps(30, end) infinite,
+    cursor-blink 0.75s step-end infinite;
+}
+
+.laptop_typing_small {
+  font-weight: normal;
+  font-size: 3em;
+  cursor: pointer;
+}
+
+/* The typing effect for the text */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The cursor  blinking effect */
+@keyframes cursor-blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orangered;
+  }
+}

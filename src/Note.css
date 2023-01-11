@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "KOTRAHOPE";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Note {
+  text-align: center;
+}
+
+/* 스타일 주기 위한 노트 메인 바닥 */
+.note-main {
+  position: relative;
+  height: 70vh;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 노트 본문부분(사이드바 포함) */
+.note-cont {
+  height: 100%;
+  width: 46vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* 노트 본문-사이드바 */
+/* 버튼과 목록 flex-column 정렬 */
+.note-button button {
+  font-size: 2vh;
+  background: 0;
+  border: 0;
+  padding: 0.5vw;
+  margin-right: 0.2vw;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #696969;
+}
+
+.note-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 93%;
+  margin-top: 1.5vh;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.note-button button:focus {
+  outline: 0;
+}
+
+.note-button .new:hover {
+  color: #20b2aa;
+}
+
+.note-button .delete:hover {
+  color: #fa8072;
+}
+
+.note-listbox {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.note-list {
+  padding: 10px;
+  font-size: 2vh;
+  color: #d3d3d3;
+  text-align: left;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  font-family: "KOTRAHOPE";
+}
+
+.note-list.selected {
+  background-color: #f3f3fc;
+  color: #484848;
+  font-size: 2.2vh;
+  font-family: "KOTRAHOPE";
+}
+
+/* 노트 본문-일기창 */
+.note-text {
+  width: 97%;
+  height: 93%;
+  margin: 0.8vw 0 0 0.8vw;
+  padding: 0.8em;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 2.5vh;
+  color: #484848;
+  background-color: transparent;
+  resize: none;
+  font-family: "KOTRAHOPE";
+}
+
+.note-text:focus {
+  outline: 0;
+}
+
+.note-button {
+  height: 6vh;
+  top: 0;
+}
+
+/* 노트 없을 경우 */
+.note-empty {
+  position: absolute;
+  bottom: 52%;
+  width: 100%;
+  height: 20%;
+}
+
+.note-empty h1 {
+  font-family: "KOTRAHOPE";
+  font-weight: normal;
+  font-size: 4vh;
+  color: #484848;
+}
+
+.note-empty button {
+  font-family: "KOTRAHOPE";
+  font-weight: normal;
+  font-size: 2.5vh;
+  cursor: pointer;
+  color: #696969;
+  padding: 0.2em 1em;
+  background-color: transparent;
+  border: 2px dotted #a9a9a9;
+  border-radius: 0.5em;
+  transition: all 0.5s;
+}
+
+.note-empty button:hover {
+  background-color: #b0c4de;
+  border: 2px solid #b0c4de;
+  color: #fff;
+  border: 0;
+}
