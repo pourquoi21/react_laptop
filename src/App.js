@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Laptop />} />
+        <Route path="/react_laptop" element={<Laptop />} />
         <Route path="/recipes" element={<Recipe />} />
         <Route path="/recipes/:id" element={<RecipeItself />} />
         <Route path="/note" element={<Note />} />
