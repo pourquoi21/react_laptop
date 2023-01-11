@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/react_laptop/static/css/main.841be783.css",
+    "main.js": "/react_laptop/static/js/main.80866129.js",
+    "static/js/787.1a45a602.chunk.js": "/react_laptop/static/js/787.1a45a602.chunk.js",
+    "static/media/time_image02.jpg": "/react_laptop/static/media/time_image02.b30baaab8aa046190ef2.jpg",
+    "static/media/laptop_desk.jpg": "/react_laptop/static/media/laptop_desk.639360f60aebe2f9f14f.jpg",
+    "static/media/time_image03.jpg": "/react_laptop/static/media/time_image03.11bab60c20154295fdd4.jpg",
+    "static/media/cont_image01.jpg": "/react_laptop/static/media/cont_image01.c9da670bfe00b27ee7ae.jpg",
+    "static/media/time_image04.jpg": "/react_laptop/static/media/time_image04.fae694c1499aeba3f89e.jpg",
+    "static/media/main_image04.jpg": "/react_laptop/static/media/main_image04.5566466ff7e21f1cd58b.jpg",
+    "static/media/laptop_room.jpg": "/react_laptop/static/media/laptop_room.3f058260a3d845c5f017.jpg",
+    "static/media/main_image01.jpg": "/react_laptop/static/media/main_image01.c0bd74443b13acbbff9f.jpg",
+    "static/media/main_image03.jpg": "/react_laptop/static/media/main_image03.1aacc20d18e27a8fecb2.jpg",
+    "static/media/time_image05.jpg": "/react_laptop/static/media/time_image05.c0ddfe4bf99e8b1e090f.jpg",
+    "static/media/cont_image02.jpg": "/react_laptop/static/media/cont_image02.3d2794dc83c9f6633434.jpg",
+    "static/media/main_image02.jpg": "/react_laptop/static/media/main_image02.2f4e1ff4c9680bf2c81b.jpg",
+    "static/media/cont_image03.jpg": "/react_laptop/static/media/cont_image03.9249cb1a3ef2ddcaf691.jpg",
+    "static/media/main_image05.jpg": "/react_laptop/static/media/main_image05.366082049f7e05d88f36.jpg",
+    "static/media/laptop_keyboard.png": "/react_laptop/static/media/laptop_keyboard.33bff5e3f00e8a4d6505.png",
+    "static/media/laptop_apple.png": "/react_laptop/static/media/laptop_apple.daa3d5993105e7bc795a.png",
+    "static/media/time_image01.jpg": "/react_laptop/static/media/time_image01.72035a0df65a6464efeb.jpg",
+    "static/media/logo.svg": "/react_laptop/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react_laptop/index.html",
+    "static/media/laptop_apple.svg": "/react_laptop/static/media/laptop_apple.f19655e1b4411ad3672a.svg",
+    "main.841be783.css.map": "/react_laptop/static/css/main.841be783.css.map",
+    "main.80866129.js.map": "/react_laptop/static/js/main.80866129.js.map",
+    "787.1a45a602.chunk.js.map": "/react_laptop/static/js/787.1a45a602.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.841be783.css",
+    "static/js/main.80866129.js"
+  ]
+}
