@@ -114,6 +114,7 @@ li {
 .recipe_section > div > div p {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
+  font-size: 1.5vh;
   color: #fff;
   margin-top: 1vh;
 }

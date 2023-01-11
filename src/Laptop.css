@@ -171,3 +171,23 @@
     border-color: orangered;
   }
 }
+
+@media (max-width: 1280px) {
+  .laptop_typing_title {
+    font-size: 4em;
+  }
+
+  .laptop_typing_small {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 680px) {
+  .laptop_typing_title {
+    font-size: 3em;
+  }
+
+  .laptop_typing_small {
+    font-size: 2em;
+  }
+}
