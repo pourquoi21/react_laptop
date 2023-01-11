@@ -12,7 +12,9 @@ A laptop made by React that has 3 toy projects.
   * You can write your note that would be saved in localStorage.
   * It also shows you a specific region's weather(It might be different from the weather of your region).
 * Recipe searching app
-  * Made using Tasty api. It helps you find a lot of recipes!
+  * Made using Tasty api. It helps you find a lot of recipes. 
+  * Using useParam, you can go deeper inside each recipes.
+  * Using useEffect, I tried not to use too much data.
 
 ### Development period
 Less than 2 weeks, but it might have some flaws.
