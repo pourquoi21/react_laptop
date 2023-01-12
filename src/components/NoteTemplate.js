@@ -12,7 +12,6 @@ const NoteTemplateBlock = styled.div`
   box-sizing: border-box;
 
   margin: 0 auto;
-  margin-top: 12vh;
 
   display: flex;
 `;
