@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MainClock from "./MainClock";
+import LaptopCloseNotice from "./LaptopCloseNotice";
 import "../Main.css";
 import time1 from "../image/time_image01.jpg";
 import time2 from "../image/time_image02.jpg";
@@ -24,6 +25,7 @@ export default function Main(props) {
 
   return (
     <div className="mainApp" style={{ backgroundImage: `url(${back})` }}>
+      {props.open ? null : <LaptopCloseNotice handleClick={props.handleOpen} />}
       {props.open ? (
         <MainClock open={props.open} handleClick={props.handleClick} />
       ) : null}

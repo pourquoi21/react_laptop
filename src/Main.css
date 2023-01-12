@@ -3,22 +3,28 @@
 .mainApp {
   width: 100%;
   height: 100%;
-  padding: 9em 0;
+  padding: 9em 0 6em 0;
+  box-sizing: border-box;
   text-align: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .main h1 {
   text-align: center;
 }
 
+.main_clock_box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .main_clock {
   font-family: "Unbounded", cursive;
   color: #fff;
-  font-size: 5em;
+  font-size: 7em;
   text-shadow: 0.2em 0 0.5em rgba(0, 0, 0, 0.3);
 }
 
@@ -31,8 +37,15 @@
 .main_buttonbox {
   width: 100%;
   height: 10em;
-  padding: 4em 0;
+  padding: 2em 0;
   box-sizing: border-box;
+}
+
+.main_buttonbox p {
+  font-family: "Unbounded", cursive;
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 0.5em;
 }
 
 .main_buttonbox button {
@@ -54,6 +67,7 @@
 .main_logout {
   display: flex;
   align-items: center;
+  justify-items: center;
   cursor: pointer;
 }
 
@@ -69,7 +83,7 @@
 
 @media (max-height: 1080px) {
   .mainApp {
-    padding: 6em 0;
+    padding: 6em 0 4em 0;
   }
   .main_buttonbox {
     height: 6em;
@@ -79,18 +93,16 @@
 
 @media (max-height: 760px) {
   .mainApp {
-    padding: 4em 0;
+    padding: 4em 0 2em 0;
   }
   .main_buttonbox {
     height: 5em;
-    padding: 2em 0;
-    margin-bottom: 2em;
   }
 }
 
 @media (max-width: 1600px) {
   .main_clock {
-    font-size: 4em;
+    font-size: 5em;
   }
 
   .main_clock span {
@@ -112,8 +124,6 @@
   }
   .main_buttonbox button {
     font-size: 0.6em;
-    margin: 0.5em;
-    padding: 0.5em 0.5em;
   }
 
   .main_logout p {
@@ -143,5 +153,26 @@
 
   .main_logout_button {
     font-size: 1em;
+  }
+}
+
+@media (max-width: 680px) {
+  .main_clock {
+    font-size: 2em;
+  }
+  .main_clock span {
+    font-size: 0.2em;
+  }
+  .main_buttonbox {
+    height: 4em;
+    padding: 0.5em 0;
+    margin-bottom: 1em;
+  }
+  .main_buttonbox button {
+    font-size: 0.5em;
+  }
+
+  .main_logout_button {
+    font-size: 0.8em;
   }
 }

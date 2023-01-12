@@ -11,7 +11,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  padding: 28vh 0;
+  padding: 23vh 0;
   background-size: cover;
   background-image: url(image/laptop_room.jpg);
   overflow: hidden;
@@ -21,7 +21,7 @@
   position: absolute;
   text-align: center;
   width: 100%;
-  bottom: 20px;
+  bottom: 5vh;
   z-index: 2;
   color: #fff;
 }
@@ -30,7 +30,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 20vh;
+  height: 25vh;
   background-size: cover;
   background-image: url(image/laptop_desk.jpg);
   transition: 0.5s;
@@ -55,17 +55,16 @@
     inset -5px -5px 5px rgba(0, 0, 0, 0.05);
 }
 
-.laptop_back.close {
+/* tried to open and close the laptop, but discarded */
+/* .laptop_back.close {
   left: 25%;
   bottom: 46%;
-  /* transform: translateX(-25%); */
-  /* transform: translateX(200%); */
   transform-origin: 0% 0% 0%;
   transform-style: preserve-3d;
   transform: perspective(2500px) rotateX(-100deg);
   transition: transform 0.5s;
   box-shadow: 0.5em 0 2em rgba(0, 0, 0, 0.2);
-}
+} */
 
 .laptop_front {
   position: absolute;
@@ -90,7 +89,7 @@
 
 .laptop_keyboard {
   position: absolute;
-  top: 74%;
+  top: 68%;
   left: 22.5%;
   width: 55vw;
   height: 20vh;
@@ -124,23 +123,23 @@
   transform: rotateX(180deg);
 }
 
+/* when logout */
 .laptop_typing {
-  width: 100vw;
-
+  width: 100%;
+  padding: 5vh 0;
   text-align: center;
   color: #fff;
   font-family: "Fuzzy Bubbles", cursive;
 }
 
 .laptop_typing_title {
-  width: 100%;
+  display: inline-block;
   font-weight: bold;
-  box-sizing: border-box;
-  font-size: 7em;
+  font-size: 5em;
   overflow: hidden;
   white-space: nowrap;
   border-right: 0.15em solid orangered;
-  animation: typing 3.5s steps(30, end) infinite,
+  animation: typing 3s steps(30, end) infinite,
     cursor-blink 0.75s step-end infinite;
 }
 
@@ -173,20 +172,20 @@
 
 @media (max-width: 1280px) {
   .laptop_typing_title {
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .laptop_typing_small {
-    font-size: 2em;
+    font-size: 1em;
   }
 }
 
 @media (max-width: 680px) {
   .laptop_typing_title {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .laptop_typing_small {
-    font-size: 2em;
+    font-size: 1em;
   }
 }

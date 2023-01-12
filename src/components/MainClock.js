@@ -21,23 +21,24 @@ export default function MainClock(props) {
   }, []);
 
   return (
-    <>
+    <div className="main_clock_box">
       <h1 className="main_clock">
         {hours}:{mins}:{secs}
         <span>{AMPM()}</span>
       </h1>
-      <div className="main_buttonbox">
+      <div title="You can make your own meme :)" className="main_buttonbox">
+        <p>Mouse over!</p>
         <Link to={`/meme`}>
           <button>Meme Generator</button>
         </Link>
         <Link to={`/note`}>
-          <button>Today's diary</button>
+          <button title="You can write your journal :)">Today's diary</button>
         </Link>
         <Link to={`/recipes`}>
-          <button>Today's recipe</button>
+          <button title="You can search for recipes :)">Today's recipe</button>
         </Link>
       </div>
       <MainLogOut open={props.open} handleClick={props.handleClick} />
-    </>
+    </div>
   );
 }

@@ -5,7 +5,7 @@ export default function LaptopCloseNotice(props) {
   return (
     <div className="laptop_typing">
       <h1 className="laptop_typing_title">Hello world :)</h1>
-      <p className="laptop_typing_small" onClick={props.onClick}>
+      <p className="laptop_typing_small" onClick={props.handleClick}>
         To start, click me!
       </p>
     </div>
