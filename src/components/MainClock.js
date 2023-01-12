@@ -5,9 +5,8 @@ import MainLogOut from "./MainLogOut";
 export default function MainClock(props) {
   const [time, setTime] = useState(new Date());
   function hours() {
-    let hours = String(time.getHours() - 12);
-    if (hours.length == 1) return (hours = "0" + hours);
-    else return hours;
+    let hours = String(time.getHours() % 12);
+    return (hours = hours.length == 1 ? "0" + hours : hours);
   }
   const mins = String(time.getMinutes()).padStart(2, "0");
   const secs = String(time.getSeconds()).padStart(2, "0");
