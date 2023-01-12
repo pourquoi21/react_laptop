@@ -4,7 +4,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### View site: https://pourquoi21.github.io/react_laptop/
+### [View site](https://pourquoi21.github.io/react_laptop/)
 
 ### Introduction
 A laptop made by React that has 3 toy projects.
@@ -15,7 +15,7 @@ A laptop made by React that has 3 toy projects.
   > `useState` Hook을 통해서 나만의 밈 이미지를 생성할 수 있습니다.
 * Note app 노트 앱
   * You can write your note that would be saved in localStorage.
-  > localStorage에 저장되는 노트를 작성할 수 있습니다.
+  > 노트를 작성하여 localStorage에 저장할 수 .
   * It also shows you a specific region's weather(It might be different from the weather of your region).
   > 특정 지역의 날씨를 보여줍니다(현재 계신 위치의 날씨와 다를 수 있습니다).
 * Recipe searching app 레시피 검색 앱
