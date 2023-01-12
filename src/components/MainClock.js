@@ -26,10 +26,10 @@ export default function MainClock(props) {
         {hours}:{mins}:{secs}
         <span>{AMPM()}</span>
       </h1>
-      <div title="You can make your own meme :)" className="main_buttonbox">
+      <div className="main_buttonbox">
         <p>Mouse over!</p>
         <Link to={`/meme`}>
-          <button>Meme Generator</button>
+          <button title="You can make your own meme :)">Meme Generator</button>
         </Link>
         <Link to={`/note`}>
           <button title="You can write your journal :)">Today's diary</button>
