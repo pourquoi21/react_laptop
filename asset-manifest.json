@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_laptop/static/css/main.f4bdc9b6.css",
-    "main.js": "/react_laptop/static/js/main.737fd5e5.js",
+    "main.js": "/react_laptop/static/js/main.430ec9da.js",
     "static/js/787.1a45a602.chunk.js": "/react_laptop/static/js/787.1a45a602.chunk.js",
     "static/media/time_image02.jpg": "/react_laptop/static/media/time_image02.b30baaab8aa046190ef2.jpg",
     "static/media/time_image03.jpg": "/react_laptop/static/media/time_image03.11bab60c20154295fdd4.jpg",
@@ -24,11 +24,11 @@
     "index.html": "/react_laptop/index.html",
     "static/media/laptop_apple.svg": "/react_laptop/static/media/laptop_apple.f19655e1b4411ad3672a.svg",
     "main.f4bdc9b6.css.map": "/react_laptop/static/css/main.f4bdc9b6.css.map",
-    "main.737fd5e5.js.map": "/react_laptop/static/js/main.737fd5e5.js.map",
+    "main.430ec9da.js.map": "/react_laptop/static/js/main.430ec9da.js.map",
     "787.1a45a602.chunk.js.map": "/react_laptop/static/js/787.1a45a602.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4bdc9b6.css",
-    "static/js/main.737fd5e5.js"
+    "static/js/main.430ec9da.js"
   ]
 }
