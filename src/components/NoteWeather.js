@@ -28,7 +28,7 @@ export default function NoteWeather() {
   }, []);
 
   const weatherIcon = () => {
-    let iconId = weather === 800 ? 0 : (parseInt(weather) / 100).toFixed(0);
+    let iconId = weather === 800 ? "0" : (parseInt(weather) / 100).toFixed(0);
     switch (iconId) {
       case "0":
         return <TiWeatherSunny size="4vh" color="FFD500" />;

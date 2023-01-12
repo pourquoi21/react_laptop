@@ -5,7 +5,7 @@ import Main from "./Main";
 
 export default function Laptop() {
   const [open, setOpen] = useState(false);
-  console.log(open);
+
   function handleClick() {
     setOpen(false);
   }
