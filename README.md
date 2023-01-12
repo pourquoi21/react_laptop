@@ -4,6 +4,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### View site: https://pourquoi21.github.io/react_laptop/
+
 ### Introduction
 A laptop made by React that has 3 toy projects.
 * Meme generator
