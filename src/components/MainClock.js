@@ -4,7 +4,11 @@ import MainLogOut from "./MainLogOut";
 
 export default function MainClock(props) {
   const [time, setTime] = useState(new Date());
-  const hours = String(time.getHours()).padStart(2, "0");
+  function hours() {
+    let hours = String(time.getHours() - 12);
+    if (hours.length == 1) return (hours = "0" + hours);
+    else return hours;
+  }
   const mins = String(time.getMinutes()).padStart(2, "0");
   const secs = String(time.getSeconds()).padStart(2, "0");
 
@@ -23,7 +27,7 @@ export default function MainClock(props) {
   return (
     <div className="main_clock_box">
       <h1 className="main_clock">
-        {hours}:{mins}:{secs}
+        {hours()}:{mins}:{secs}
         <span>{AMPM()}</span>
       </h1>
       <div className="main_buttonbox">
