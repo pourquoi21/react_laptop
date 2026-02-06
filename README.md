@@ -27,7 +27,8 @@ A laptop made by React that has 3 toy projects.
   > useEffect를 통해 api fetching시 과도한 데이터를 사용하지 않도록 했습니다.
 
 ### Development period
-Less than 2 weeks, but it might have some flaws.
+Less than 2 weeks
+Refactoring planned
 
 ### Development environment
 Used React-create-app, and VSC
